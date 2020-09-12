@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block homepage %}
+    <section class="section">
+      <header>
+        <h3>You Have Been Logged Out..</h3>
+      </header>
+
+      <footer>
+        <p>Want to Login In <a href="{% url 'login' %}">Log In</a></p>
+      </footer>
+    </section>
+{% endblock homepage %}

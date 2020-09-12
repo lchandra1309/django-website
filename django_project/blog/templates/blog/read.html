@@ -1,0 +1,309 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content1 %}
+
+    <!--====== STYLESHEETS ======-->
+    <link href="{% static 'read/css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'read/css/theme.css' %}" rel="stylesheet">
+    <link href="{% static 'read/css/icons.css' %}" rel="stylesheet">
+
+    <!--====== MAIN STYLESHEETS ======-->
+    <link href="{% static 'read/style.css' %}" rel="stylesheet">
+    <link href="{% static 'read/css/responsive.css' %}" rel="stylesheet">
+
+    <script src="{% static 'read/js/vendor/modernizr-2.8.3.min.js' %}"></script>
+{% endblock content1 %}
+
+{% block homepage %}
+        <!--WELCOME SLIDER AREA-->
+        <div class="welcome-slider-area white font16">
+            <div class="welcome-single-slide">
+                <div class="slide-bg-one slide-bg-overlay"></div>
+                <div class="welcome-area">
+                    <div class="container">
+                        <div class="row flex-v-center">
+                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
+                                <div class="welcome-text">
+                                    <h1>Add a new Skill of language.</h1>
+                                    <p>“It doesn't matter if you win or lose; what matters is if you learn from it or not.”
+                                                        ― Mohith Agadi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-single-slide">
+                <div class="slide-bg-two slide-bg-overlay"></div>
+                <div class="welcome-area">
+                    <div class="container">
+                        <div class="row flex-v-center">
+                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
+                                <div class="welcome-text">
+                                    <h1>Laying tomorrow’s foundation.</h1>
+                                    <p>“A life spent making mistakes is not only more honourable but more useful than a life spent doing nothing.” George Bernard Shaw</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-single-slide">
+                <div class="slide-bg-three slide-bg-overlay"></div>
+                <div class="welcome-area">
+                    <div class="container">
+                        <div class="row flex-v-center">
+                            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
+                                <div class="welcome-text">
+                                    <h1>Motivate yourself</h1>
+                                    <p>‘Tell me and I forget. Teach me and I remember. Involve me and I learn.’ –Benjamin Franklin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--WELCOME SLIDER AREA END-->
+      <!--ABOUT AREA-->
+    <div class="row">
+        <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+            <div class="area-title text-center wow fadeIn">
+                <legend></legend>
+                <legend><h2>...Topics...</h2></legend>
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Things To Learn
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="{% url 'read' %}">Python</a>
+                      <a class="dropdown-item" href="#">Coming Soon</a>
+                      <a class="dropdown-item" href="#">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section-padding about-area" id="about">
+        <div class="container">
+            <div class="row flex-v-center">
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="about-content xs-mb50 wow fadeIn">
+                        <a class="xs-font20 mb30" style="font-size: 25px; text-decoration: none" href="https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g"> Watch the Youtube Videos Of Corey Schafer </a>
+                        <p>In His tutorials, you Will learn the Basics Of Django WebFrameWork and basic of Other Stuff like <i><mark>Jinja2</mark>,</i>
+                            <i><mark>JavaScript-Basics</mark>,</i><i>and you Need To Know The basics Of<mark> Python</mark>to Understand the Django</i></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+                        <div class="youtube-width">
+                            <div class="youtube-container">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/UmljXZIypDc?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+    <!--BLOG AREA-->
+    <section class="blog-feed-area padding-top" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>So Here Comes the Next Question?..</h2>
+                        <h2>Where to Start Learning Python??</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="youtube-width">
+                            <div class="youtube-container">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/QXeEoD0pB3E?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="blog-details padding30">
+                            <h3 class="blog-title font20 mb30"><a href="https://www.youtube.com/user/javaboynavin">Watch The telusko Python tutorials..</a></h3>
+                            <h4 class="blog-title font20 mb30">Go and Start Learning The Python In Fun Way.</h4>
+                            <h4 class="blog-title font20 mb30">you Will Feel Easy And You Will Start To code in Python</h4>
+                            <p class="blog-meta font14 mt20"><span>Topics Covered</span><p>Basic Python  And OOPS Concepts</p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="youtube-width">
+                            <div class="youtube-container">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/IfW_hldiC5c?list=PLzgPDYo_3xukVT-9RT6TIS7SGO4B2pHs3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="blog-details padding30">
+                            <h3 class="blog-title font20 mb30"><a href="https://www.youtube.com/channel/UCIgXF0FrYJL0a6sMsRIsLvA">Watch The Amulya's Academy Python tutorials..</a></h3>
+                            <h3 class="blog-title font20 mb30">Want To Learn Python From Scratch..Here's the Place You Can learn Python..</a></h3>
+                            <h3 class="blog-title font20 mb30">From Python Scratch To Data Science Topics Like <i><mark>Matplotlib</mark></i></a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="youtube-width">
+                            <div class="youtube-container">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/yQSEXcf6s2I?list=PLCC34OHNcOtoC6GglhF3ncJ5rLwQrLGnV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="blog-details padding30">
+                            <h3 class="blog-title font20 mb30"><a href="https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw">Watch the Codemy.com youtube Chaneel..</a></h3>
+                            <h3 class="blog-title font20 mb30">After you mastered The Python Class And Functions.,,Lets try into the GUI,.. The TKinter</a></h3>
+                            <h3 class="blog-title font20 mb30">Among ThE GUi like pyQt,kivy,PyGUI, The TKinter Is Most Popular One...</a></h3>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- part twooo.. -->
+    <section class="section-padding about-area" id="about">
+        <div class="container">
+            <div class="row flex-v-center">
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="youtube-width">
+                        <div class="youtube-container">
+                            <iframe width="853" height="480" src="https://www.youtube.com/embed/IYILCEV5j6s?list=PLUDwpEzHYYLvx6SuogA7Zhb_hZl3sln66" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12">
+                    <div class="about-content xs-mb50 wow fadeIn">
+                        <a class="xs-font20 mb30" style="font-size: 25px; text-decoration: none" href="https://www.youtube.com/channel/UC46vj6mN-6kZm5RYWWqebsg"> Watch the Youtube Videos Of SDET </a>
+                        <p>Learn Selenium Automaton In Easy Manner.. After This Video,you Will Be Knowing the  Basics Of Selenium Webdriver </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- new testimonal page,.... -->
+    <section class="testmonial-area bg-theme section-padding" id="testmonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>Other Youtube Channels For The Reference..</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="testmonial-slider">
+                        <div class="single-testmonial">
+                            <div class="author-content mb20">
+                                <p>Just Go And CheckOut His Youtube Videos..Superb Beginner Friendly And real-World Example Code..
+                                    <i>....Just Visit His Webpage To Learn Some Free Stuffs and start coding..
+                                        <mark ><a href="https://web.learncodeonline.in/">/...Go To WebPage../</a></mark></i>
+                                </p>
+                            </div>
+                            <div class="author-name-image relative">
+                                <div class="author-img mb20">
+                                    <img src="{% static 'read/img/testmonial/hitesh.jpeg' %}" alt="">
+                                </div>
+                                <h4>Hitesh Choudhary</h4>
+                                <a href="https://www.youtube.com/channel/UCXgGY0wkgOzynnHvSEVmE3A">youTube Channel</a>
+                            </div>
+                        </div>
+                        <div class="single-testmonial">
+                            <div class="author-content mb20">
+                                <p>Simple,Clean.. For Those who want to Start Learning Python As a Beginner</p>
+                            </div>
+                            <div class="author-name-image relative">
+                                <div class="author-img mb20">
+                                    <img src="{% static 'read/img/testmonial/edureka.png' %}" alt="">
+                                </div>
+                                <h4>Edureka Online Training Courses</h4>
+                                <a href="https://www.youtube.com/user/edurekaIN">YouTube</a>
+                            </div>
+                        </div>
+                        <div class="single-testmonial">
+                            <div class="author-content mb20">
+                                <p>Just Learning The things In Simple Ways..</p>
+                            </div>
+                            <div class="author-name-image relative">
+                                <div class="author-img mb20">
+                                    <img src="{% static 'read/img/testmonial/simplelearn.jpg' %}" alt="">
+                                </div>
+                                <h4>Simple Learn</h4>
+                                <a href="https://www.youtube.com/user/Simplilearn">youTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="blog-feed-area padding-top" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-md-offset-2 col-lg-offset-2 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>Additional Things To Learn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-thumb">
+                            <a href="https://github.com/"><img src="{% static 'read/img/blog/github.jpeg' %}" alt=""></a>
+                        </div>
+                        <div class="blog-details padding30">
+                            <p style="font-style: oblique;"><a href="#">Git is an Open Source Distributed Version Control System. ... Also, Git provides features like branches and merges, which I will be covering later. Distributed Version Control System: Git has a remote repository which is stored in a server and a local repository which is stored in the computer of each developer</a></p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-thumb">
+                            <a href="https://www.docker.com/"><img src="{% static 'read/img/blog/docker.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="blog-details padding30">
+                            <p style="font-style: oblique;"><a href="">Docker is an open platform for developing, shipping & running distributed applications, whether on laptops, data center VMs or cloud. Docker provides the ability to package and run an application in a loosely isolated environment called a container.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog-item sm-mb30 xs-mb30 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-thumb">
+                            <a href="https://aws.amazon.com/"><img src="{% static 'read/img/blog/aws.png' %}" alt=""></a>
+                        </div>
+                        <div class="blog-details padding30">
+                            <p style="font-style: oblique;"><a href="">Amazon Web Services (AWS) is a leader for cloud service, and in the last 10 years, cloud computing has snowballed from pure data storage of files to complex systems and applications. Indeed, at this time it’s almost impossible to run any system within your enterprise that doesn't have cloud elements connecting into it. Consider this if you’re using email a smartphone or documents, then your data is being stored in the Cloud.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== SCRIPTS JS ======-->
+    <script src="{% static 'read/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'read/js/vendor/bootstrap.min.js' %}"></script>
+    <!--====== PLUGINS JS ======-->
+    <script src="{% static 'read/js/vendor/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'read/js/vendor/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script src="{% static 'read/js/vendor/jquery.appear.js' %}"></script>
+    <script src="{% static 'read/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'read/js/stellar.js' %}"></script>
+    <script src="{% static 'read/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'read/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'read/js/wow.min.js' %}"></script>
+    <script src="{% static 'read/js/jquery-modal-video.min.js' %}"></script>
+    <script src="{% static 'read/js/stellarnav.min.js' %}"></script>
+    <script src="{% static 'read/js/placeholdem.min.js' %}"></script>
+    <script src="{% static 'read/js/contact-form.js' %}"></script>
+    <script src="{% static 'read/js/jquery.ajaxchimp.js' %}"></script>
+    <script src="{% static 'read/js/jquery.sticky.js' %}"></script>
+    <!--===== ACTIVE JS=====-->
+    <script src="{% static 'read/js/main.js' %}"></script>
+{% endblock homepage %}

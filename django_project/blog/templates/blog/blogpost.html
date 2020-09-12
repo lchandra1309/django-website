@@ -1,0 +1,71 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block homepage %}
+<div class="row">
+    <div class="col-xl">
+        <h1> See Others thinking.?...</h1>
+        {% for temp in post %}
+            <article class="media content-section">
+                <img class="rounded-circle article-img" src="{{ temp.posted_user.profile.image.url }}">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="#">{{ temp.posted_user  }}</a>
+                        <small class="text-muted">{{ temp.posted_date|date:"F d, Y" }}</small>
+                    </div>
+                    <h2><a class="article-title" href="#">{{ temp.title }}</a></h2>
+                    <p class="article-content">{{ temp.content }}</p>
+                </div>
+            </article>
+        {% endfor%}
+    </div>
+
+
+    <div class="col-xl">
+        <div class="content-section">
+            <p><i>This is the place Where you can speak about some relevent topics about the languages,framework and you can also request some videos for certain languages...</i></p>
+        </div>
+        <div class="content-section">
+            <p>At First, We Were like to talk About the Some Basic Concepts of Python ,Django And Selenium Using Python..</p>
+        </div>
+        <div>
+            <h2>Want To Create A post??</h2>
+            <a class='text-success' href="{% url 'blogpostcreate' %}">Click Me...</a>
+        </div>
+    </div>
+</div>
+
+{% endblock homepage %}  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
